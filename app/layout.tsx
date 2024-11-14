@@ -28,8 +28,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Next Shadcn Template",
-  description: "NextJs template with shadcn/ui",
+  title: "Palog Post",
+  description: "Practice with NextJs, Convex, Clerk",
 };
 
 export default function RootLayout({
@@ -40,6 +40,14 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+        <head>
+          {/* Add the favicon link */}
+          <link
+            rel="icon"
+            href=" https://directly-upload-s3-bucket-test.s3.ap-southeast-2.amazonaws.com/Badge/Palog-Logo-removebg.png"
+            type="image/png"
+          />
+        </head>
         <body
           className={cn(
             "flex min-h-screen flex-col",
