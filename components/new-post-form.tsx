@@ -89,7 +89,7 @@ export default function NewPostForm() {
   // ====== processForm function
 
   return (
-    <form className="mt-6 max-w-2xl" onSubmit={handleSubmit(processForm)}>
+    <form className="mt-6 max-w-2xl mx-auto" onSubmit={handleSubmit(processForm)}>
       <div className="flex flex-col gap-4">
         {/* ==================== */}
 
