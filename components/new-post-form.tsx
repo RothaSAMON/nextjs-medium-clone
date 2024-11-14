@@ -2,7 +2,6 @@
 
 import { z } from "zod";
 import { toast } from "sonner";
-import JSONContent from "novel";
 import { useEffect, useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -19,6 +18,7 @@ import ImageUploader from "@/components/image-uploader";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useRouter } from "next/navigation";
 import { Id } from "@/convex/_generated/dataModel";
+import { JSONContent } from "novel";
 
 type Inputs = z.infer<typeof newPostSchema>;
 
